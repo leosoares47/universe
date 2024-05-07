@@ -1,3 +1,4 @@
+import { Link } from "react-router-dom"
 import "../App.css"
 
 export function Home() {
@@ -8,8 +9,16 @@ export function Home() {
           <div className="flex gap-8 p-10">
             <img className="" src="./src/assets/logo.svg" alt="" />
             <div className="font-bold">Home</div>
-            <div>O Universo</div>
-            <div>Exploração</div>
+            <div>
+              <Link to="/universe">
+                <button>O Universo</button>
+              </Link>
+            </div>
+            <div>
+              <Link to="/exploration">
+                <button>Exploração</button>
+              </Link>
+            </div>
           </div>
         </header>
         <main>

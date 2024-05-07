@@ -1,3 +1,5 @@
+import { Link } from "react-router-dom"
+
 import "../App.css"
 
 export function Exploration() {
@@ -7,23 +9,31 @@ export function Exploration() {
         <header className="flex gap-8">
           <div className="flex gap-8 p-10">
             <img className="" src="./src/assets/logo.svg" alt="" />
-            <div>Home</div>
-            <div className="font-bold">O Universo</div>
-            <div>Exploração</div>
+            <div>
+              <Link to="/home">
+                <button>Home</button>
+              </Link>
+            </div>
+            <div>
+              <Link to="/universe">
+                <button>O Universo</button>
+              </Link>
+            </div>
+            <div className="font-bold">Exploração</div>
           </div>
         </header>
         <main>
           <div className="mt-16 ml-16">
-            <h1 className="font-bold text-5xl">O Universo</h1>
-            <div className="">
+            <h1 className="font-bold text-5xl">Exploração</h1>
+            <div className="w-[648px] mt-4">
               <p>
-                A palavra Universo deriva do latim universum. A palavra latina
-                foi usada por Cícero e posteriormente por outros autores com o
-                mesmo sentido que é empregada atualmente. A palavra latina é
-                derivada da contração poética unvorsum — utilizada primeiramente
-                por Lucrécio no Livro IV de seu “Sobre a Natureza das coisas” —
-                que conecta un, uni (um) com vorsum, versum (que significa "algo
-                rodado, rolado ou mudado").
+                Os corpos celestes e astros sempre foram motivo de grande
+                fascinação na humanidade. Há registros de gregos, mesopotâmicos
+                e astecas descrevendo vários acontecimentos celestes. Na era
+                contemporânea, vários cientistas deram grandes contribuições
+                para que o sonho de explorar o espaço pudesse se tornar
+                realidade, como o russo Konstantin Tsiolkovsky, o alemão Hermann
+                Oberth e o estadunidense Robert Goddard.
               </p>
             </div>
           </div>
