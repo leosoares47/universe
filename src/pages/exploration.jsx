@@ -5,7 +5,7 @@ import "../App.css"
 export function Exploration() {
   return (
     <>
-      <div className="bg-cover bg-no-repeat bg-center h-screen bg-home text-white">
+      <div className="bg-cover bg-no-repeat bg-center h-screen bg-exploration text-white">
         <header className="flex gap-8">
           <div className="flex gap-8 p-10">
             <img className="" src="./src/assets/logo.svg" alt="" />
